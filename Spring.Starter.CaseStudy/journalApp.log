@@ -1,0 +1,64 @@
+24-05-08 11:40:34.248 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.Spring.Assignment.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+24-05-08 11:40:34.413 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.Spring.Assignment.Application for test class com.Spring.Assignment.ApplicationTests 
+24-05-08 11:40:34.680 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running 
+24-05-08 11:40:35.008 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final 
+24-05-08 11:40:35.063 [main] INFO  c.Spring.Assignment.ApplicationTests - Starting ApplicationTests using Java 17.0.7 with PID 16096 (started by infinity in C:\Users\infin\Documents\workspace-spring-tool-suite-4-4.19.1.RELEASE\Spring.Starter.CaseStudy) 
+24-05-08 11:40:35.065 [main] INFO  c.Spring.Assignment.ApplicationTests - No active profile set, falling back to 1 default profile: "default" 
+24-05-08 11:40:36.171 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+24-05-08 11:40:36.247 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface. 
+24-05-08 11:40:36.777 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6d5380c2 
+24-05-08 11:40:36.887 [main] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource 
+24-05-08 11:40:36.888 [main] DEBUG com.zaxxer.hikari.HikariConfig - Movie - configuration: 
+24-05-08 11:40:36.893 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false 
+24-05-08 11:40:36.894 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true 
+24-05-08 11:40:36.894 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none 
+24-05-08 11:40:36.894 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none 
+24-05-08 11:40:36.894 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none 
+24-05-08 11:40:36.894 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000 
+24-05-08 11:40:36.895 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none 
+24-05-08 11:40:36.895 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none 
+24-05-08 11:40:36.895 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none 
+24-05-08 11:40:36.896 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>} 
+24-05-08 11:40:36.897 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.h2.Driver" 
+24-05-08 11:40:36.897 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none 
+24-05-08 11:40:36.897 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{} 
+24-05-08 11:40:36.898 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none 
+24-05-08 11:40:36.898 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000 
+24-05-08 11:40:36.898 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1 
+24-05-08 11:40:36.898 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false 
+24-05-08 11:40:36.899 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:h2:mem:Movie;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE 
+24-05-08 11:40:36.899 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime...................0 
+24-05-08 11:40:36.899 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0 
+24-05-08 11:40:36.899 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000 
+24-05-08 11:40:36.899 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10 
+24-05-08 11:40:36.900 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none 
+24-05-08 11:40:36.900 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none 
+24-05-08 11:40:36.900 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10 
+24-05-08 11:40:36.900 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked> 
+24-05-08 11:40:36.900 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"Movie" 
+24-05-08 11:40:36.901 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false 
+24-05-08 11:40:36.901 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false 
+24-05-08 11:40:36.901 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none 
+24-05-08 11:40:36.902 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none 
+24-05-08 11:40:36.902 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal 
+24-05-08 11:40:36.902 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default 
+24-05-08 11:40:36.902 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"sa" 
+24-05-08 11:40:36.903 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000 
+24-05-08 11:40:36.903 [main] INFO  com.zaxxer.hikari.HikariDataSource - Movie - Starting... 
+24-05-08 11:40:37.363 [main] INFO  com.zaxxer.hikari.pool.HikariPool - Movie - Added connection conn0: url=jdbc:h2:mem:Movie user=SA 
+24-05-08 11:40:37.368 [main] INFO  com.zaxxer.hikari.HikariDataSource - Movie - Start completed. 
+24-05-08 11:40:37.485 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+24-05-08 11:40:37.651 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final 
+24-05-08 11:40:37.764 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+24-05-08 11:40:38.398 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+24-05-08 11:40:38.483 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+24-05-08 11:40:39.846 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+24-05-08 11:40:39.932 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+24-05-08 11:40:40.745 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+24-05-08 11:40:40.932 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index 
+24-05-08 11:40:41.326 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@462deb2b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@381c826c, org.springframework.security.web.context.SecurityContextHolderFilter@34ac72c3, org.springframework.security.web.header.HeaderWriterFilter@57f1fbae, org.springframework.web.filter.CorsFilter@13563e64, org.springframework.security.web.csrf.CsrfFilter@4bc49d70, org.springframework.security.web.authentication.logout.LogoutFilter@4b407ac7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2257590f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57330423, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@449f9628, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37806ccb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f062e10, org.springframework.security.web.access.ExceptionTranslationFilter@6f0df74, org.springframework.security.web.access.intercept.AuthorizationFilter@3344c1d7] 
+24-05-08 11:40:41.756 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:Movie' 
+24-05-08 11:40:41.842 [main] INFO  c.Spring.Assignment.ApplicationTests - Started ApplicationTests in 7.185 seconds (process running for 9.114) 
+24-05-08 11:40:42.752 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+24-05-08 11:40:42.757 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - Movie - Shutdown initiated... 
+24-05-08 11:40:42.760 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - Movie - Shutdown completed. 

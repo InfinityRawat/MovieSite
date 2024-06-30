@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="../css/allCss.css">
+        <script type="text/javascript" th:src="@{/js/Best.js}"></script>
+
+</head>
+
+<body>
+
+
+	<div class="LoginContainer" align="center">
+
+		<div class="error" th:if="${param.error}">
+			Invalid UserName and password
+		</div>
+
+		<div class="logout" th:if="${param.logout}">
+			You are sucessfully logout
+		</div>
+
+		<h1>Login Page</h1>
+
+		<form th:action="@{/login}" method="post">
+			<label for="name">UserName</label>
+			<input type="text" name="username" id="name">
+			<label for="pass">Password</label>
+			<input type="password" name="password" id="pass">
+			<input type="submit" value="submit">
+		</form>
+	</div>
+
+	<div align="right" sec:authorize="isAuthenticated()" th:replace="Template :: logout">
+	</div>
+	
+	      <div th:replace="Template :: homeButton"></div>
+
+</body>
+
+</html>

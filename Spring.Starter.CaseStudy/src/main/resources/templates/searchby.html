@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Tab</title>
+	<link rel="stylesheet" href="../css/allCss.css">
+
+</head>
+<body  style="background-color: lightgreen">
+    <div align="center"  class="SearchContainer" >
+        <h1 class="display-1" > MovieFlix </h1>   
+    </div>
+	
+	<div class = "searchForm">
+    <form action="#" method="get"  
+    th:action="${string} == 'ID' ? @{/byId}: (${string} == 'NAME' ? @{/byName}: @{/byCollection})">
+
+        <h2 th:if="${string eq 'ID'}"> Search By ID</h2>
+        <h2 th:if="${string eq 'NAME'}"> Search By NAME</h2>
+        <div th:if="${string eq 'COLLECTION'}"> 
+
+            <h2>Search By COLLECTION</h2>
+            <label for="from">From: </label>
+            <input type="number" name="from" id="from">
+            <label for="to">To: </label>
+            <input type="number" name="to" id="to">
+            
+             <input type="submit" value="submit">
+
+        </div>
+
+        <div th:unless="${string eq 'COLLECTION'}">
+        <input type="text" name="search">
+        <input type="submit" value="submit">
+
+        </div>
+
+    </form>
+	</div>
+</body>
+</html>

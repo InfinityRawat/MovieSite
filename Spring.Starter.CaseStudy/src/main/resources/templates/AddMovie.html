@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/allCss.css">
+	<script type="text/javascript" th:src="@{/js/Best.js}"></script>
+
+	<title>Add Movie</title>
+</head>
+
+<body style="background-color: aliceblue;">
+	<div class="AddMovieContainer">
+
+		<h1> Enter New Movie Details: </h1>
+		<form action="#" th:action="@{/add}" method="post" th:object="${movie}">
+			<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" th:errorclass="error"></p><br>
+
+
+			<label for="name">Movie Name: </label>
+			<input type="text" name="name" id="name"><br>
+			<p th:if="${#fields.hasErrors('id')}" th:errors="*{id}" th:errorclass="error"></p>
+			<br>
+			<label for="id">Movie ID: </label>
+			<input type="text" name="id" id="id"><br>
+
+			<p th:if="${#fields.hasErrors('collection')}" th:errors="*{collection}" th:errorclass="error"></p><br>
+			<label for="coll">Collection: </label>
+			<input type="text" name="collection" id="coll"><br><br>
+
+			<input type="submit" value="submit">
+		</form>
+	</div>
+
+	<div align="right" th:replace="Template :: logout">
+	</div>
+</body>
+
+</html>

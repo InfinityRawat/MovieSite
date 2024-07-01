@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: Spring.Starter.EMailSender  
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:Employee}
+    username: ${MYSQL_USERNAME:UserEmp}
+    password: ${MYSQL_PASSWORD:password}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: ${Email_Host}
+    port: ${Email_Port}
+    password: ${Email_Password}
+    username: ${Email_ID}
+    default-encoding: UTF-8
+    properties:
+      mail:
+        mime:
+          chartset: UTF
+        smtp:
+          writetimeout: 10000
+          connectiontimeout: 10000
+          timeout: 10000
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  
+    verify:
+      host: ${Verify_Email_Host}   
+      
+  profiles:
+    active:
+    - ${MYSQL_PROFILE:dev}
+    
+server:
+  port: 8082

@@ -1,0 +1,16 @@
+
+
+MYSQL_HOST: localhost
+MYSQL_PORT: 3306
+MYSQL_USERNAME: userEmp
+MYSQL_PASSWORD: password
+MYSQL_DB: newemployee
+
+Server.Port: 8082
+
+Email_Host: smtp.gmail.com
+Email_Port: 587
+Email_ID: <Your Email Id>
+Email_Password: <EmailIDPasswordAppGenerated>
+Verify_Email_Host: http://localhost:${Server.Port}
+
